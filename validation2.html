@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Information</title>
+<meta charset = "utf-8"/>
+<script src="./validation2.js"></script>
+</head>
+<body>
+
+<section align="center">
+<h1>Contact Information</h1>
+<form id="Email" action="" >
+    <fieldset>
+      <legend>Email</legend>
+      <p id="Email1">
+        <label for="email">Enter Your Email</label>
+        <input id="email" name="email" type="text" />
+		<input onCLick="validateEmail()" type="button" id="Submit" name="Submit" value="Submit"/>
+      </p>
+    </fieldset>
+  </form>
+  
+  <form id="Phone" action="" >
+    <fieldset>
+      <legend style="text-align:center;">Phone</legend>
+      <p id="Phone1">
+        <label for="Phone">Enter your Phone Number</label>
+        <input id="Phone" name="Phone" type="text" />
+		<input onCLick="validatePhone()" type="button" id="Submit" name="Submit" value="Submit"/>
+		</p>
+    </fieldset>
+  </form>
+  
+  <form id="Address" action="" >
+    <fieldset>
+      <legend style="text-align:center;">Address</legend>
+      <p id="Address1">
+        <label for="Address">Enter your Address</label>
+        <input id="Address" name="Address" type="text" />
+		<input onCLick="validateAddress()" type="button" id="Submit" name="Submit" value="Submit"/>
+		</p>
+    </fieldset>
+  </form>
+  
+</section>
+
+<section align="center" line-height:20px;>
+<p></p>
+<button type="button">Submit</button>
+</section>
+
+</body>
+</html>

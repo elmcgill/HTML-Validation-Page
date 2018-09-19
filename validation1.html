@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Validation Page</title>
+<meta charset = "utf-8"/>
+<script src="./validation1.js"></script>
+</head>
+<body>
+
+<h1 style="text-align:center;">Validation Form</h1>
+<form id="First and Last Name" action="" >
+    <fieldset>
+      <legend style="text-align:center;">First and Last Name</legend>
+      <p id="First Name">
+        <label for="First Name">First Name</label>
+        <input id="FN" name="FN" type="text" />
+		<input onCLick="validateFN()" type="button" id="Continue" name="Continue" value="Continue"/>
+      </p>
+		<p id="Last Name">
+        <label for="Last Name">Last Name</label>
+        <input id="LN" name="LN" type="text" />
+		<input onCLick="validateLN()" type="button" id="Continue" name="Continue" value="Continue"/>
+      </p>
+    </fieldset>
+  </form>
+  
+  <form id="Gender" action="" >
+    <fieldset>
+      <legend style="text-align:center;">Gender</legend>
+      <p id="Gender2">
+	  <select>
+        <option value="Male">Male</option>
+		<option value="Female">Female</option>
+		</select>
+		<input onCLick="validateGender()" type="button" id="Continue" name="Continue" value="Continue"/>
+      </p>
+    </fieldset>
+  </form>
+  
+  <form id="State" action="" >
+    <fieldset>
+      <legend style="text-align:center;">State</legend>
+      <p id="State2">
+	  <select>
+        <option value="Arizona">Arizona</option>
+		<option value="California">California</option>
+		<option value="Colorado">Colorado</option>
+		<option value="Florida">Florida</option>
+		<option value="Hawaii">Hawaii</option>
+		<option value="Iowa">Iowa</option>
+		<option value="New York">New York</option>
+		<option value="Washington">Washington</option>
+		<option value="Virginia">Virginia</option>
+		</select>
+		<input onCLick="validateState()" type="button" id="Continue" name="Continue" value="Continue"/>
+      </p>
+    </fieldset>
+  </form>
+  
+  <section align="center">
+  <h1> Continue to next page</h1>
+  <button type="button" onClick="nextPage()">Continue</button> 
+  </section>
+
+  
+</body>
+</html>
